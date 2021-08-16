@@ -28,6 +28,7 @@ For tracking linter errors locally you need to follow these steps:
   > `npm install`
   > This command will download all the dependancies of the project
 
+<<<<<<< HEAD
 - For tracking the linter errors in HTML file run:
 
   > `npx hint .`
@@ -37,6 +38,8 @@ For tracking linter errors locally you need to follow these steps:
   > `npx stylelint "\*_/_.{css,scss}"`
 
 - And For tracking the linter errors in JavaScript file run:
+=======
+>>>>>>> b586ce45da5ad0c7c26100fbf52ba2edfc610388
 
   > `npx eslint .`
 
