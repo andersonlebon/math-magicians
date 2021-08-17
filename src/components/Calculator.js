@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { TiDivide, TiTimes, TiMinus, TiPlus, TiEquals } from 'react-icons/ti';
+import { 
+  TiDivide, TiTimes, TiMinus, TiPlus, TiEquals,
+}
+  from 'react-icons/ti';
 import calculate from '../mathLogic/calculate';
 
 class Calculator extends Component {
