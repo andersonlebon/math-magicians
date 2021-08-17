@@ -1,0 +1,59 @@
+/* stylelint-disable */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin: 80px auto 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .result {
+    width: 100%;
+    padding: 35px 10px;
+    font-size: 2rem;
+    background-color: rgb(136, 136, 133);
+    border: 1px solid rgba(240, 239, 239, 0.671);
+    text-align: end;
+    color: white;
+  }
+}
+
+.cal-table {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+
+  .cal-item {
+    border: 1px solid rgba(240, 239, 239, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgba(221, 219, 219, 0.952);
+  }
+
+  .bg-orange {
+    background-color: orange;
+  }
+
+  .item-0 {
+    grid-column: span 2;
+  }
+}
