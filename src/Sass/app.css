@@ -26,6 +26,10 @@ ul {
   background-color: rgba(221, 219, 219, 0.952);
 }
 
+.cal-table .bg-orange {
+  background-color: orange;
+}
+
 .cal-table .item-0 {
   grid-column: span 2;
 }
