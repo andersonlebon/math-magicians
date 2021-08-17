@@ -51,7 +51,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next.includes('.')) {
         return {};
       }
-      return { next: obj.next + '.' };
+      return { next: `${obj.next}.` };
     }
     if (obj.operation) {
       return { next: '0.' };
@@ -60,7 +60,7 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: obj.total + '.' };
+      return { total: `${obj.total}.` };
     }
     return { total: '0.' };
   }
