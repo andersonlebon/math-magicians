@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+}
+
+.cal-table {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(5, 100px);
+
+  .cal-item {
+    border: 1px solid rgba(131, 130, 130, 0.904);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-0 {
+    grid-column: span 2;
+  }
+}
