@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { TiDivide, TiTimes, TiMinus, TiPlus, TiEquals } from 'react-icons/ti';
-import calculate from './calculate';
+import calculate from '../mathLogic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
@@ -14,8 +14,8 @@ class Calculator extends Component {
     };
   }
 
-  handleCalculate = ({currentTarget}) => {
-    const btnName = currentTarget.outerText === '' ? currentTarget.id : currentTarget.outerText
+  handleCalculate = ({currentTarget : btn }) => {
+    const btnName = btn.outerText === '' ? btn.id : btn.outerText
     const obj = calculate(this.state, btnName) ;
     this.setState(obj);
     console.log(btnName)
@@ -25,7 +25,7 @@ class Calculator extends Component {
     const { next, total } = this.state;
     return (
       <div className="container">
-        <div className="result">{total && next ? next : total ? total : next}</div>
+        <div className="result">{total && next ? next : total ? total : next || "0"}</div>
         <ul className="cal-table">
           <li className="cal-item" onClick={this.handleCalculate}>
             AC
