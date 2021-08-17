@@ -12,7 +12,7 @@ ul {
 }
 
 .cal-table .cal-item {
-  border: 1px solid rgba(131, 130, 130, 0.904);
+  border: 1px solid rgba(131, 130, 130, 0.356);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +22,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
+  background-color: rgba(221, 219, 219, 0.952);
 }
 
 .cal-table .item-0 {

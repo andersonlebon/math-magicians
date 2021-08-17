@@ -8,10 +8,12 @@ ul {
   grid-template-rows: repeat(5, 100px);
 
   .cal-item {
-    border: 1px solid rgba(131, 130, 130, 0.904);
+    border: 1px solid rgba(131, 130, 130, 0.356);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    background-color: rgba(221, 219, 219, 0.952);
   }
 
   .item-0 {
