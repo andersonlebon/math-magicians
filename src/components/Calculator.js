@@ -25,7 +25,7 @@ class Calculator extends Component {
     const { next, total } = this.state;
     return (
       <div className="container">
-        <div className="result">{total && next ? total : next}</div>
+        <div className="result">{total && next ? next : total ? total : next}</div>
         <ul className="cal-table">
           <li className="cal-item" onClick={this.handleCalculate}>
             AC
