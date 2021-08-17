@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { 
+import {
   TiDivide, TiTimes, TiMinus, TiPlus, TiEquals,
 }
   from 'react-icons/ti';
@@ -19,7 +19,6 @@ class Calculator extends Component {
     const btnName = btn.outerText === '' ? btn.id : btn.outerText;
     const obj = calculate(this.state, btnName);
     this.setState(obj);
-    console.log(btnName);
   };
 
   render() {
