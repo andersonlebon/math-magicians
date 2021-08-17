@@ -9,13 +9,17 @@ ul {
           box-sizing: border-box;
 }
 
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
 .container {
   width: 50%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
   margin: 80px auto 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -31,9 +35,12 @@ ul {
 
 .container .result {
   width: 100%;
-  padding: 20px 10px;
-  background-color: yellow;
+  padding: 35px 10px;
+  font-size: 2rem;
+  background-color: #888885;
+  border: 1px solid rgba(240, 239, 239, 0.671);
   text-align: end;
+  color: white;
 }
 
 .cal-table {
@@ -47,7 +54,7 @@ ul {
 }
 
 .cal-table .cal-item {
-  border: 1px solid rgba(131, 130, 130, 0.356);
+  border: 1px solid rgba(240, 239, 239, 0.671);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
