@@ -1,10 +1,35 @@
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  margin: 80px auto 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .result {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: yellow;
+    text-align: end;
+  }
 }
 
 .cal-table {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 100px);
 
   .cal-item {
