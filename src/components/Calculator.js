@@ -12,19 +12,50 @@ const Calculator = () => {
   });
 
   const handleCalculate = ({ currentTarget: btn }) => {
-
     const btnName = btn.outerText === '' ? btn.id : btn.outerText;
     try {
-        const obj = calculate(state, btnName);
-        setState({ ...state, ...obj });
+      const obj = calculate(state, btnName);
+      setState({ ...state, ...obj });
     } catch (error) {
       const { next } = state;
       if (next) {
         setState({ ...state, total: next, next: null });
       }
-      setState({...state, operation: btnName });
+      setState({ ...state, operation: btnName });
     }
   };
+
+  const calculatorData = [
+    [
+      { class: 'cal-item', name: 'AC' },
+      { class: 'cal-item', name: '+/-' },
+      { class: 'cal-item', name: '%' },
+      { class: 'cal-item bg-orange', name: '÷' },
+    ],
+    [
+      { class: 'cal-item', name: '7' },
+      { class: 'cal-item', name: '8' },
+      { class: 'cal-item', name: '9' },
+      { class: 'cal-item bg-orange', name: 'x' },
+    ],
+    [
+      { class: 'cal-item', name: '4' },
+      { class: 'cal-item', name: '5' },
+      { class: 'cal-item', name: '6' },
+      { class: 'cal-item', name: '-' },
+    ],
+    [
+      { class: 'cal-item', name: '1' },
+      { class: 'cal-item', name: '2' },
+      { class: 'cal-item', name: '3' },
+      { class: 'cal-item bg-orange', name: '+' },
+    ],
+    [
+      { class: 'cal-item item-0', name: '0' },
+      { class: 'cal-item', name: '.' },
+      { class: 'cal-item bg-orange', name: '=' },
+    ],
+  ];
 
   const { next, total } = state;
   return (
@@ -33,152 +64,13 @@ const Calculator = () => {
         {total && next ? next : total || next || '0'}
       </div>
       <ul className="cal-table">
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          AC
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          +/-
-        </li>
-        <li
-          className="cal-item"
-          id="%"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          %
-        </li>
-        <li
-          className="cal-item bg-orange"
-          id="÷"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          <TiDivide />
-        </li>
-
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          7
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          8
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          9
-        </li>
-        <li
-          className="cal-item bg-orange"
-          id="x"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          <TiTimes />
-        </li>
-
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          4
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          5
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          6
-        </li>
-
-        <li
-          className="cal-item bg-orange"
-          id="-"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          <TiMinus />
-        </li>
-
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          1
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          2
-        </li>
-        <li
-          className="cal-item"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          3
-        </li>
-
-        <li
-          className="cal-item bg-orange "
-          id="+"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          <TiPlus />
-        </li>
-
-        <li
-          className="cal-item item-0"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          0
-        </li>
-        <li
-          className="cal-item"
-          id="-"
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          .
-        </li>
-        <li
-          className="cal-item bg-orange"
-          id="="
-          onClick={(e) => handleCalculate(e)}
-          aria-hidden="true"
-        >
-          <TiEquals />
-        </li>
+        {calculatorData.map((row) =>
+          row.map((data) => (
+            <li className="cal-item" key={data}>
+              {data}
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );
