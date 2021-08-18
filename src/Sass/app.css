@@ -1,4 +1,5 @@
 /* stylelint-disable */
+
 ul {
   list-style: none;
   margin: 0;
@@ -13,6 +14,7 @@ ul {
 body {
   font-size: 20px;
   font-family: sans-serif;
+  color: black;
 }
 
 .container {
@@ -21,7 +23,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 80px auto 0;
+  margin: 50px auto 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -67,6 +69,13 @@ body {
           justify-content: center;
   font-weight: bold;
   background-color: rgba(221, 219, 219, 0.952);
+}
+
+.cal-table .cal-item:hover {
+  cursor: pointer;
+  background-color: rgba(185, 185, 185, 0.658);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .cal-table .bg-orange {

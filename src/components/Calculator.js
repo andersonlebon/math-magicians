@@ -1,197 +1,79 @@
-import React, { Component } from 'react';
-import {
-  TiDivide, TiTimes, TiMinus, TiPlus, TiEquals,
-}
-  from 'react-icons/ti';
+import React, { useState } from 'react';
 import calculate from '../mathLogic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  componentDidMount() {
-    this.setState({
-      total: null,
-      next: null,
-      operation: null,
-    });
-  }
-
-  handleCalculate = ({ currentTarget: btn }) => {
+  const handleCalculate = ({ currentTarget: btn }) => {
+    const btnName = btn.outerText;
     try {
-      const btnName = btn.outerText === '' ? btn.id : btn.outerText;
-      const obj = calculate(this.state, btnName);
-      this.setState(obj);
+      const obj = calculate(state, btnName);
+      setState({ ...state, ...obj });
     } catch (error) {
-      const btnName = btn.outerText === '' ? btn.id : btn.outerText;
-      const { next } = this.state;
+      const { next } = state;
       if (next) {
-        this.setState({ total: next, next: null });
+        setState({ ...state, total: next, next: null });
       }
-      this.setState({ operation: btnName });
+      setState({ ...state, operation: btnName });
     }
   };
 
-  render() {
-    const { next, total } = this.state;
-    return (
-      <div className="container">
-        <div className="result">
-          {total && next ? next : total || next || '0'}
-        </div>
-        <ul className="cal-table">
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            AC
-          </li>
-          <li
-            className="cal-item onClick={this.handleCalculate}"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            +/-
-          </li>
-          <li
-            className="cal-item"
-            id="%"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            %
-          </li>
-          <li
-            className="cal-item bg-orange"
-            id="÷"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            <TiDivide />
-          </li>
+  const calculatorData = [
+    [
+      { class: 'cal-item makefalse', name: 'AC' },
+      { class: 'cal-item', name: '+/-' },
+      { class: 'cal-item', name: '%' },
+      { class: 'cal-item bg-orange', name: '÷' },
+    ],
+    [
+      { class: 'cal-item', name: '7' },
+      { class: 'cal-item', name: '8' },
+      { class: 'cal-item', name: '9' },
+      { class: 'cal-item bg-orange', name: 'x' },
+    ],
+    [
+      { class: 'cal-item', name: '4' },
+      { class: 'cal-item', name: '5' },
+      { class: 'cal-item', name: '6' },
+      { class: 'cal-item bg-orange', name: '-' },
+    ],
+    [
+      { class: 'cal-item', name: '1' },
+      { class: 'cal-item', name: '2' },
+      { class: 'cal-item', name: '3' },
+      { class: 'cal-item bg-orange', name: '+' },
+    ],
+    [
+      { class: 'cal-item item-0', name: '0' },
+      { class: 'cal-item', name: '.' },
+      { class: 'cal-item bg-orange', name: '=' },
+    ],
+  ];
 
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            7
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            8
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            9
-          </li>
-          <li
-            className="cal-item bg-orange"
-            id="x"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            <TiTimes />
-          </li>
-
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            4
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            5
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            6
-          </li>
-
-          <li
-            className="cal-item bg-orange"
-            id="-"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            <TiMinus />
-          </li>
-
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            1
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            2
-          </li>
-          <li
-            className="cal-item"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            3
-          </li>
-
-          <li
-            className="cal-item bg-orange "
-            id="+"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            <TiPlus />
-          </li>
-
-          <li
-            className="cal-item item-0"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            0
-          </li>
-          <li
-            className="cal-item"
-            id="-"
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            .
-          </li>
-          <li
-            className="cal-item bg-orange"
-            id="="
-            onClick={this.handleCalculate}
-            aria-hidden="true"
-          >
-            <TiEquals />
-          </li>
-        </ul>
+  const { next, total } = state;
+  return (
+    <div className="container">
+      <div className="result">
+        {total && next ? next : total || next || '0'}
       </div>
-    );
-  }
-}
+      <ul className="cal-table">
+        {calculatorData.map((row) => row.map((data) => (
+          <li
+            className={data.class}
+            aria-hidden="true"
+            onClick={(e) => handleCalculate(e)}
+            key={data.name}
+          >
+            {data.name}
+          </li>
+        )))}
+      </ul>
+    </div>
+  );
+};
 
 export default Calculator;
