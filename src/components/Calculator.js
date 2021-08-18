@@ -1,7 +1,4 @@
-/* eslint-disable */
-
 import React, { useState } from 'react';
-import { TiDivide, TiTimes, TiMinus, TiPlus, TiEquals } from 'react-icons/ti';
 import calculate from '../mathLogic/calculate';
 
 const Calculator = () => {
@@ -64,13 +61,16 @@ const Calculator = () => {
         {total && next ? next : total || next || '0'}
       </div>
       <ul className="cal-table">
-        {calculatorData.map((row) =>
-          row.map((data) => (
-            <li className={data.class} onClick={(e)=> handleCalculate(e)} key={data.name}>
-              {data.name}
-            </li>
-          ))
-        )}
+        {calculatorData.map((row) => row.map((data) => (
+          <li
+            className={data.class}
+            aria-hidden="true"
+            onClick={(e) => handleCalculate(e)}
+            key={data.name}
+          >
+            {data.name}
+          </li>
+        )))}
       </ul>
     </div>
   );
