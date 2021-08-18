@@ -16,9 +16,18 @@ class Calculator extends Component {
   }
 
   handleCalculate = ({ currentTarget: btn }) => {
-    const btnName = btn.outerText === '' ? btn.id : btn.outerText;
-    const obj = calculate(this.state, btnName);
-    this.setState(obj);
+    try {
+      const btnName = btn.outerText === '' ? btn.id : btn.outerText;
+      const obj = calculate(this.state, btnName);
+      this.setState(obj);
+    } catch (error) {
+      const btnName = btn.outerText === '' ? btn.id : btn.outerText;
+      const { next } = this.state;
+      if (next) {
+        this.setState({ total: next, next: null });
+      }
+      this.setState({ operation: btnName });
+    }
   };
 
   render() {
