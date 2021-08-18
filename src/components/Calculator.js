@@ -8,11 +8,15 @@ import calculate from '../mathLogic/calculate';
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.setState({
       total: null,
       next: null,
       operation: null,
-    };
+    });
   }
 
   handleCalculate = ({ currentTarget: btn }) => {
