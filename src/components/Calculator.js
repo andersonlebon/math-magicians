@@ -42,7 +42,7 @@ const Calculator = () => {
       { class: 'cal-item', name: '4' },
       { class: 'cal-item', name: '5' },
       { class: 'cal-item', name: '6' },
-      { class: 'cal-item', name: '-' },
+      { class: 'cal-item bg-orange', name: '-' },
     ],
     [
       { class: 'cal-item', name: '1' },
@@ -66,8 +66,8 @@ const Calculator = () => {
       <ul className="cal-table">
         {calculatorData.map((row) =>
           row.map((data) => (
-            <li className="cal-item" key={data}>
-              {data}
+            <li className={data.class} onClick={(e)=> handleCalculate(e)} key={data.name}>
+              {data.name}
             </li>
           ))
         )}
