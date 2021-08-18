@@ -12,7 +12,7 @@ const Calculator = () => {
   });
 
   const handleCalculate = ({ currentTarget: btn }) => {
-    const btnName = btn.outerText === '' ? btn.id : btn.outerText;
+    const btnName = btn.outerText;
     try {
       const obj = calculate(state, btnName);
       setState({ ...state, ...obj });
