@@ -24,7 +24,7 @@ const Calculator = () => {
 
   const calculatorData = [
     [
-      { class: 'cal-item', name: 'AC' },
+      { class: 'cal-item makefalse', name: 'AC' },
       { class: 'cal-item', name: '+/-' },
       { class: 'cal-item', name: '%' },
       { class: 'cal-item bg-orange', name: '÷' },
