@@ -13,12 +13,11 @@ const Calculator = () => {
 
   const handleCalculate = ({ currentTarget: btn }) => {
 
+    const btnName = btn.outerText === '' ? btn.id : btn.outerText;
     try {
-        const btnName = btn.outerText === '' ? btn.id : btn.outerText;
         const obj = calculate(state, btnName);
         setState({ ...state, ...obj });
     } catch (error) {
-      const btnName = btn.outerText === '' ? btn.id : btn.outerText;
       const { next } = state;
       if (next) {
         setState({ ...state, total: next, next: null });
