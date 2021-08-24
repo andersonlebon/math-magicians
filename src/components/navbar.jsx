@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => (
   <header className="w-100">
     <nav className="navbar navbar-expand-lg navbar-dark w-100 bg-dark">
-      <h1 className="navbar-brand fontb" href="/home">
+      <h1 className="navbar-brand font" href="/home">
         Math magicians
       </h1>
       <button
