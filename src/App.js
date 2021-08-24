@@ -15,7 +15,7 @@ class App extends Component {
 
   render() {
     return (
-      <main>
+      <main className="font">
         <Route path="/" component={Navbar} />
         <Switch>
           <Route path="/" exact component={Home} />

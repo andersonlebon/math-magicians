@@ -56,23 +56,26 @@ const Calculator = () => {
 
   const { next, total } = state;
   return (
-    <div className="container-cal w-50">
-      <div className="result">
-        {total && next ? next : total || next || '0'}
+    <section className="d-flex calculator  w-100 justify-content-around">
+      <p className="py-5 my-5" c>Let&apos;s do some math!!</p>
+      <div className="container-cal ">
+        <div className="result">
+          {total && next ? next : total || next || '0'}
+        </div>
+        <ul className="cal-table">
+          {calculatorData.map((row) => row.map((data) => (
+            <li
+              className={data.class}
+              aria-hidden="true"
+              onClick={(e) => handleCalculate(e)}
+              key={data.name}
+            >
+              {data.name}
+            </li>
+          )))}
+        </ul>
       </div>
-      <ul className="cal-table">
-        {calculatorData.map((row) => row.map((data) => (
-          <li
-            className={data.class}
-            aria-hidden="true"
-            onClick={(e) => handleCalculate(e)}
-            key={data.name}
-          >
-            {data.name}
-          </li>
-        )))}
-      </ul>
-    </div>
+    </section>
   );
 };
 

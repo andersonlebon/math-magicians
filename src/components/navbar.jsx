@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => (
   <header className="w-100">
     <nav className="navbar navbar-expand-lg navbar-dark w-100 bg-dark">
-      <h1 className="navbar-brand" href="/home">
+      <h1 className="navbar-brand fontb" href="/home">
         Math magicians
       </h1>
       <button
@@ -19,14 +19,14 @@ const Navbar = () => (
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav ml-auto">
-          <a className="nav-item nav-link active" href="/">
+          <a className="nav-item nav-link active font" href="/">
             Home
             <span className="sr-only">(current)</span>
           </a>
-          <a className="nav-item nav-link" href="/calculator">
+          <a className="nav-item nav-link font" href="/calculator">
             Calculator
           </a>
-          <a className="nav-item nav-link" href="/quotes">
+          <a className="nav-item nav-link font" href="/quotes">
             Quotes
           </a>
         </div>
