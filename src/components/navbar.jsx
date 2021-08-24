@@ -2,10 +2,10 @@ import React from 'react';
 
 const Navbar = () => (
   <header className="w-100">
-    <nav className="navbar navbar-dark bg-dark">
-      <a className="navbar-brand" href="/home">
+    <nav className="navbar navbar-expand-lg navbar-dark w-100 bg-dark">
+      <h1 className="navbar-brand" href="/home">
         Math magicians
-      </a>
+      </h1>
       <button
         className="navbar-toggler"
         type="button"
