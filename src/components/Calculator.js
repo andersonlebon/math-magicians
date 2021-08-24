@@ -56,7 +56,7 @@ const Calculator = () => {
 
   const { next, total } = state;
   return (
-    <div className="container">
+    <div className="container-cal w-50">
       <div className="result">
         {total && next ? next : total || next || '0'}
       </div>

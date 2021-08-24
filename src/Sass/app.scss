@@ -1,5 +1,9 @@
 @import './more';
 
+main {
+  height: 100vh;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -11,19 +15,28 @@ ul {
 }
 
 body {
+  background-color: rgba(170, 170, 170, 0.493) !important;
   font-size: 20px;
   font-family: sans-serif;
   color: black;
 }
 
-.container {
-  width: 50%;
-  height: 100%;
+header {
+  h1 {
+    font-size: 30px !important;
+    margin-left: 20px;
+  }
+}
+
+.container-cal {
+  width: 40%;
+  height: 60%;
   display: flex;
-  margin: 50px auto 0;
+  margin: 100px auto 0;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transform: scale(0.8);
 
   .result {
     width: 100%;

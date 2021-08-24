@@ -1,14 +1,19 @@
 .quotes {
+  margin: 20px 0;
+
   .image {
     width: 200px;
+    border-radius: 50%;
   }
 
   .p-quotes {
     width: 50%;
     padding: 20px 30px;
 
-    p {
+    li {
       margin: 0;
+      font-size: 15px;
+      font-style: italic;
     }
   }
 }

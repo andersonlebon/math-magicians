@@ -15,14 +15,14 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <main>
         <Route path="/" component={Navbar} />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/calculator" component={Calculator} />
           <Route path="/quotes" component={Quote} />
         </Switch>
-      </>
+      </main>
     );
   }
 }
