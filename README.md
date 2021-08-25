@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![localhost_3000_](https://user-images.githubusercontent.com/65068771/129810088-6109bf33-823f-4246-a718-cde034e5a422.png)
+![andersonlebon github io_math-magicians_](https://user-images.githubusercontent.com/65068771/130706200-bf23ca4e-8aa0-4066-815a-0dacd1cd8997.png)
+
 
 ## Built With
 
@@ -11,6 +12,8 @@ This project is build with:
 - ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6), ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
 - ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
 - ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+
+## [Demo](https://andersonlebon.github.io/math-magicians/#/)
 
 ## Getting Started
 

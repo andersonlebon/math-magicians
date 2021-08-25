@@ -1,3 +1,10 @@
+@import './more';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+main {
+  height: 100vh;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -9,19 +16,39 @@ ul {
 }
 
 body {
+  background-color: rgba(170, 170, 170, 0.493) !important;
   font-size: 20px;
-  font-family: sans-serif;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  width: 50%;
-  height: 100%;
+.font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.fontb {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+header {
+  h1 {
+    font-size: 30px !important;
+    margin-left: 20px;
+    font-weight: 100;
+  }
+}
+
+.container-cal {
+  width: 40%;
+  height: 60%;
   display: flex;
-  margin: 50px auto 0;
+  // margin: 100px auto 0;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transform: scale(0.8);
 
   .result {
     width: 100%;
