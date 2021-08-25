@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <header className="w-100">
     <nav className="navbar navbar-expand-lg navbar-dark w-100 bg-dark">
-      <h1 className="navbar-brand font" href="/home">
+      <h1 className="navbar-brand font">
         Math magicians
       </h1>
       <button
@@ -19,16 +20,16 @@ const Navbar = () => (
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav ml-auto">
-          <a className="nav-item nav-link active font" href="/">
+          <Link className="nav-item nav-link active font" to="/">
             Home
             <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link font" href="/calculator">
+          </Link>
+          <Link className="nav-item nav-link font" to="/calculator">
             Calculator
-          </a>
-          <a className="nav-item nav-link font" href="/quotes">
+          </Link>
+          <Link className="nav-item nav-link font" to="/quotes">
             Quotes
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
