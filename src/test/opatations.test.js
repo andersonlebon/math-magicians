@@ -1,7 +1,7 @@
 import operate from '../mathLogic/operate';
 // import Big from 'big.js';
 
-describe('Math logic', () => {
+describe('Math oparations', () => {
   it('Should test the addition oparation', () => {
     const result = operate(1, 2, '+');
     expect(parseInt(result, 10)).toEqual(3);
