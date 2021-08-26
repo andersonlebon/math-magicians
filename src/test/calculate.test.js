@@ -39,7 +39,31 @@ describe('Calculator test', () => {
       operation: '%',
     };
     const { total } = calculate(input, '=');
-    expect(total).toBe(1);
+    expect(total).toBe('1');
+  });
+
+  it('testing the multiplication operation', () => {
+    input = {
+      total: 4,
+      next: 2,
+      operation: 'x',
+    };
+    const { total } = calculate(input, '=');
+    expect(total).toBe('8');
+  });
+
+  it('testing the AC Button', () => {
+    input = {
+      total: 52356346235233,
+      next: 55744574723465,
+      operation: '+',
+    };
+    const result = calculate(input, 'AC');
+    expect(result).toMatchSnapshot({
+      total: null,
+      next: null,
+      operation: null,
+    });
   });
 });
 
@@ -98,19 +122,7 @@ describe('Calculator test', () => {
 //       operation: null,
 //     });
 //   });
-//   it('testing the multiplication operation', () => {
-//     input = {
-//       total: 4,
-//       next: 2,
-//       operation: 'x',
-//     };
-//     const result = calculate(input, '=');
-//     expect(result).toMatchSnapshot({
-//       total: '8',
-//       next: null,
-//       operation: null,
-//     });
-//   });
+//
 //   it('testing the multiplication operation', () => {
 //     input = {
 //       total: 5,
@@ -124,17 +136,5 @@ describe('Calculator test', () => {
 //       operation: null,
 //     });
 //   });
-//   it('testing the AC Button', () => {
-//     input = {
-//       total: 52356346235233,
-//       next: 55744574723465,
-//       operation: '+',
-//     };
-//     const result = calculate(input, 'AC');
-//     expect(result).toMatchSnapshot({
-//       total: '0',
-//       next: null,
-//       operation: null,
-//     });
-//   });
+//
 // });

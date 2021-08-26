@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Calculator test testing the Modulation operation 1`] = `
+exports[`Calculator test testing the AC Button 1`] = `
 Object {
   "next": null,
   "operation": null,
-  "total": "0",
+  "total": null,
 }
 `;
