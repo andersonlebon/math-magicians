@@ -8,7 +8,7 @@ it('renders correctly', () => {
     .create(
       <HashRouter>
         <Navbar />
-      </HashRouter>
+      </HashRouter>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
