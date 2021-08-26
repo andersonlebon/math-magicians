@@ -2,20 +2,69 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="p-5"
+  className="quotes w-100 p-5"
 >
-  <h2>
-    Welcome to our page
-  </h2>
-  <p
-    className="px-4 py-2"
+  <li
+    className="d-flex my-5 justify-content-center align-items-center"
   >
-    Math is beautiful. But sometimes, this can be hard to see, and even harder to convey to students who don’t — yet — share your passion. In addition to math books, using math quotes in your daily instruction is one of many ways to get students excited about this oft-dreaded subject. Over the centuries, some of the world’s brightest minds have shared wise words that remain relevant to this day! We’ve compiled a list of our favorite quotes about math for teachers and students alike! Inspire, motivate, and humor your students with these math quotes!
-  </p>
-  <p
-    className="px-4 py-2"
+    <div
+      className="image rounded-circle"
+    >
+      <img
+        alt="Card cap"
+        className="w-100 h-100 rounded-circle"
+        src="alber.jpg"
+      />
+    </div>
+    <div
+      className="p-quotes"
+    >
+      <ol>
+        <li>
+          Pure mathematics is, in its way, the poetry of logical ideas.
+        </li>
+        <li>
+          Without mathematics, there’s nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+        </li>
+        <li>
+          Mathematics is the most beautiful and most powerful creation of the human spirit.
+        </li>
+      </ol>
+      <p>
+        Albert Einstein, German theoretical physicist
+      </p>
+    </div>
+  </li>
+  <li
+    className="d-flex my-5 justify-content-center align-items-center"
   >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, a nihil maxime ipsa iste possimus id eius dolorem, incidunt ad ullam sunt. Explicabo adipisci nostrum sequi rem ut ad minus. Asperiores, architecto molestias aspernatur expedita dicta dolores dignissimos, voluptate officiis ducimus ullam officia velit earum repudiandae sint atque deleniti recusandae perferendis nihil voluptatibus. Sequi sint aliquam nulla ullam rerum magni! Quibusdam fuga temporibus nemo blanditiis alias laborum dicta voluptate voluptates esse, perferendis provident nesciunt reiciendis accusantium laudantium magni aliquam! Quo, nihil distinctio asperiores quis ducimus eveniet temporibus perferendis. Ad, dignissimos?
-  </p>
+    <div
+      className="image rounded-circle"
+    >
+      <img
+        alt="Card cap"
+        className="w-100 h-100 rounded-circle"
+        src="sofia.jpg"
+      />
+    </div>
+    <div
+      className="p-quotes"
+    >
+      <ol>
+        <li>
+          A mathematician who is not also something of a poet will never be a complete mathematician.
+        </li>
+        <li>
+          Without mathematics, there’s nothing you can do. Everything around you is mathematics. Everything around you is numbers.
+        </li>
+        <li>
+          Mathematics is the most beautiful and most powerful creation of the human spirit.
+        </li>
+      </ol>
+      <p>
+        Sofia Kovalevskaya.
+      </p>
+    </div>
+  </li>
 </section>
 `;

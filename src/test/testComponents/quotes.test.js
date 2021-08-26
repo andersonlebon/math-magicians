@@ -1,7 +1,8 @@
+import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from '../../components/home';
+import Quote from '../../components/quotes';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Home />).toJSON();
+  const tree = renderer.create(<Quote />).toJSON();
   expect(tree).toMatchSnapshot();
 });
