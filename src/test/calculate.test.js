@@ -21,6 +21,26 @@ describe('Calculator test', () => {
     const { total } = calculate(input, '=');
     expect(total).toBe('3');
   });
+
+  it('test the result of +/-', () => {
+    input = {
+      total: 5,
+      next: 9,
+      operation: '-',
+    };
+
+    const { next } = calculate(input, '+/-');
+    expect(next).toBe('-9');
+  });
+  it('testing the Modulation operation', () => {
+    input = {
+      total: 11,
+      next: 5,
+      operation: '%',
+    };
+    const { total } = calculate(input, '=');
+    expect(total).toBe(1);
+  });
 });
 
 // let input = {};
