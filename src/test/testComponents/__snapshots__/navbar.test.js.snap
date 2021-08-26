@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="w-100"
+>
+  <nav
+    className="navbar navbar-expand-lg navbar-dark w-100 bg-dark"
+  >
+    <h1
+      className="navbar-brand font"
+    >
+      Math magicians
+    </h1>
+    <button
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarNavAltMarkup"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+    >
+      <div
+        className="navbar-nav ml-auto"
+      >
+        <a
+          className="nav-item nav-link active font"
+          href="#/"
+          onClick={[Function]}
+        >
+          Home
+          <span
+            className="sr-only"
+          >
+            (current)
+          </span>
+        </a>
+        <a
+          className="nav-item nav-link font"
+          href="#/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+        <a
+          className="nav-item nav-link font"
+          href="#/quotes"
+          onClick={[Function]}
+        >
+          Quotes
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+`;
