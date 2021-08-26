@@ -1,5 +1,4 @@
 import operate from '../mathLogic/operate';
-// import Big from 'big.js';
 
 describe('Math oparations', () => {
   it('Should test the addition oparation', () => {
