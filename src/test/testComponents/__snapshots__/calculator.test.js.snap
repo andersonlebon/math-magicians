@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Calculator page component renders correctly 1`] = `
 <section
   className="d-flex calculator  w-100 justify-content-around"
 >
   <p
-    c={true}
     className="py-5 my-5"
   >
     Let's do some math!!
@@ -15,6 +14,7 @@ exports[`renders correctly 1`] = `
   >
     <div
       className="result"
+      data-testid="result"
     >
       0
     </div>
@@ -24,6 +24,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item makefalse"
+        data-testid="AC"
         onClick={[Function]}
       >
         AC
@@ -31,6 +32,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="+/-"
         onClick={[Function]}
       >
         +/-
@@ -38,6 +40,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="%"
         onClick={[Function]}
       >
         %
@@ -45,6 +48,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item bg-orange"
+        data-testid="÷"
         onClick={[Function]}
       >
         ÷
@@ -52,6 +56,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="7"
         onClick={[Function]}
       >
         7
@@ -59,6 +64,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="8"
         onClick={[Function]}
       >
         8
@@ -66,6 +72,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="9"
         onClick={[Function]}
       >
         9
@@ -73,6 +80,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item bg-orange"
+        data-testid="x"
         onClick={[Function]}
       >
         x
@@ -80,6 +88,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="4"
         onClick={[Function]}
       >
         4
@@ -87,6 +96,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="5"
         onClick={[Function]}
       >
         5
@@ -94,6 +104,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="6"
         onClick={[Function]}
       >
         6
@@ -101,6 +112,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item bg-orange"
+        data-testid="-"
         onClick={[Function]}
       >
         -
@@ -108,6 +120,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="1"
         onClick={[Function]}
       >
         1
@@ -115,6 +128,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="2"
         onClick={[Function]}
       >
         2
@@ -122,6 +136,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="3"
         onClick={[Function]}
       >
         3
@@ -129,6 +144,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item bg-orange"
+        data-testid="+"
         onClick={[Function]}
       >
         +
@@ -136,6 +152,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item item-0"
+        data-testid="0"
         onClick={[Function]}
       >
         0
@@ -143,6 +160,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item"
+        data-testid="."
         onClick={[Function]}
       >
         .
@@ -150,6 +168,7 @@ exports[`renders correctly 1`] = `
       <li
         aria-hidden="true"
         className="cal-item bg-orange"
+        data-testid="="
         onClick={[Function]}
       >
         =

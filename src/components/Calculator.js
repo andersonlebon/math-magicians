@@ -57,15 +57,16 @@ const Calculator = () => {
   const { next, total } = state;
   return (
     <section className="d-flex calculator  w-100 justify-content-around">
-      <p className="py-5 my-5" c>Let&apos;s do some math!!</p>
+      <p className="py-5 my-5">Let&apos;s do some math!!</p>
       <div className="container-cal ">
-        <div className="result">
+        <div data-testid="result" className="result">
           {total && next ? next : total || next || '0'}
         </div>
         <ul className="cal-table">
           {calculatorData.map((row) => row.map((data) => (
             <li
               className={data.class}
+              data-testid={data.name}
               aria-hidden="true"
               onClick={(e) => handleCalculate(e)}
               key={data.name}
