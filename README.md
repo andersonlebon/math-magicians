@@ -2,60 +2,70 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![andersonlebon github io_math-magicians_](https://user-images.githubusercontent.com/65068771/130706200-bf23ca4e-8aa0-4066-815a-0dacd1cd8997.png)
 
 
-## Learn More
+## Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is build with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6), ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
+- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
 
-### Code Splitting
+## [Demo](https://andersonlebon.github.io/math-magicians/#/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started
 
-### Analyzing the Bundle Size
+To get the content of this project locally you need to run this command in your terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `git clone https://github.com/andersonlebon/math-magicians.git`
+- `cd math-magicians`
+- Use `npm start` to run the app in live server
 
-### Making a Progressive Web App
+## Test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For tracking linter errors locally you need to follow these steps:
 
-### Advanced Configuration
+- After cloning the project you need to run this command
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  > `npm install`
+  > This command will download all the dependancies of the project
 
-### Deployment
+- For tracking the linter errors in HTML file run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  > `npx hint .`
 
-### `npm run build` fails to minify
+- For tracking the linter errors in CSS file run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  > `npx stylelint "\*_/_.{css,scss}"`
+
+- And For tracking the linter errors in JavaScript file run:
+
+  > `npx eslint .`
+
+- Use `npm run build` to run the app in live server
+
+## Author
+
+👤 **Anderson Caleb**
+
+- GitHub: [@Anhersonlebon](https://github.com/andersonlebon)
+- Twitter: [@BuyananaCaleb](https://twitter.com/BuyananaCaleb)
+- LinkedIn: [Anderson Caleb](https://www.linkedin.com/in/anderson-caleb-915343209/)
+
+## :handshake: Contributing
+
+Feel free to check the [issues page](https://github.com/andersonlebon/math-magicians/issues)
+
+## Show your support
+
+Give a :star: if you like this project!
+
+## Acknowledgments
+
+- Thanks to everyone who will get time to check this code especially to code reviewers.
+
+## 📝 License
+
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
