@@ -5,8 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![andersonlebon github io_math-magicians_](https://user-images.githubusercontent.com/65068771/130706200-bf23ca4e-8aa0-4066-815a-0dacd1cd8997.png)
 
 
-## Built With
-
+## Built Wi
 This project is build with:
 
 - ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6), ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
