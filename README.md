@@ -4,7 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![andersonlebon github io_math-magicians_](https://user-images.githubusercontent.com/65068771/130706200-bf23ca4e-8aa0-4066-815a-0dacd1cd8997.png)
 
-
 ## Built With
 This project is build with:
 
